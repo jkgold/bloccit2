@@ -5,5 +5,5 @@ Rails.application.routes.draw do
 
   get 'welcome/contact'
 
- route to: 'welcome#index'
+ root to: 'welcome#index'
 end

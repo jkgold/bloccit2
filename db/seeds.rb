@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 require 'faker'
-=======
- require 'faker'
->>>>>>> master
+
+
+
  
  # Create Posts
  50.times do

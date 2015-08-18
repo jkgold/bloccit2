@@ -3,4 +3,7 @@ class Post < ActiveRecord::Base
 	belongs_to :user
 
 	default_scope { order('created_at DESC') }
+
+	scope :ordered_by_title, -> { where(title: true)  }
+	scope :ordered_by_reverse_created_at, -> { order("reverse_created_at") }
 end

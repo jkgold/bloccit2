@@ -1,4 +1,11 @@
 class PostsController < ApplicationController
+  before_action :flash_attack, if: :index
+
+  def flash_attack
+    flash[:notice] ="flashattack"
+  end
+end
+
   def index
   	@posts = Post.all
   end
@@ -37,4 +44,4 @@ class PostsController < ApplicationController
       render :edit
     end
   end
-end
+

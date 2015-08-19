@@ -12,7 +12,7 @@ has_many :posts
  	def moderator?
  		role == 'moderator'
  	end
-
-  end
+   end
+   
  
 
